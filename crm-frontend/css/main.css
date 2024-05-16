@@ -1,0 +1,13 @@
+@import './global.css';
+@import './createHeader.css';
+@import './createSection.css';
+@import './createModal.css';
+@import './createInput.css';
+@import './createContact.css';
+@import './showClients.css';
+@import './utils.css';
+@import './deleteModal.css';
+@import './warningModal.css';
+@import './preloader.css';
+@import './sorting.css';
+@import './mediaAdaptive.css';

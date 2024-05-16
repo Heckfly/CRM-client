@@ -1,0 +1,45 @@
+.form__floating-label {
+	position: relative;
+	width: 100%;
+}
+
+.form__floating-label .form__input {
+	background-color: transparent;
+	transition: 0.15s all ease;
+  width: 100%;
+  border-bottom: 1px solid var(--lavender-gray-color);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.form__floating-label .form__input:focus {
+	border-color: var(--lavender-gray-color);
+}
+
+.form__floating-label .form__input::placeholder {
+	font-size: 0;
+}
+
+.form__floating-label .form__label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 14px;
+	color: #acacac;
+	pointer-events: none;
+	transition: 0.3s all ease-in-out;
+}
+
+.form__floating-label .form__input:focus + .form__label,
+.form__floating-label .form__input:not(:placeholder-shown) + .form__label {
+	transform: translate(5px, -10px);
+	background-color: transparent;
+	font-size: 10px;
+	color: var(--dark-gray-color);
+}
+
+.form__required {
+	color: var(--tropical-indigo-color);
+	font-weight: 600;
+}

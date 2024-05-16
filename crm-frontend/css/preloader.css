@@ -1,0 +1,49 @@
+.loader {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: var(--white-smoke-color);
+}
+
+@keyframes ring-rotation {
+  0% { transform: translate(-50%,-50%) rotate(0deg); }
+  100% { transform: translate(-50%,-50%) rotate(360deg); }
+}
+
+.ring-rotation div {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border: 5px solid #9873ff;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+
+.ring-rotation div {
+  animation: ring-rotation 1s linear infinite;
+  top: 50px;
+  left: 50px
+}
+
+.loading-circle {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+}
+
+.ring-rotation {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+
+.ring-rotation div {
+  box-sizing: content-box;
+}

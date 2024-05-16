@@ -1,0 +1,133 @@
+.shadow-del {
+	background-color: rgba(0, 0, 0, 0.35);
+  width: 100%;
+  height: 100%;
+	top: 0;
+	left: 0;
+  cursor: pointer;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  pointer-events: auto;
+  opacity: 0;
+	z-index: 200;
+}
+
+.modal-del {
+	width: 450px;
+  background-color: var(--white-color);
+  position: relative;
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 25px 30px;
+  margin: 0 auto;
+  opacity: 0;
+  cursor: auto;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.35);
+}
+
+.display-animation-del {
+  animation: showModalDel 0.3s ease-in-out 0.3s forwards;
+}
+@keyframes showModalDel {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.remove-animation-del {
+  animation: removeModalDel 0.3s ease-in-out forwards;
+}
+@keyframes removeModalDel {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.close__modal-btn-del {
+	cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal__title-del {
+	font-size: 18px;
+  font-weight: 700;
+  color: var(--dark-charcoal-color);
+  margin-bottom: 11px;
+	cursor: default;
+}
+
+.modal__question-del {
+	text-align: center;
+	width: 80%;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 25px;
+	cursor: default;
+}
+
+.agree-btn-del {
+	padding: 17px 35px;
+	background-color: var(--tropical-indigo-color);
+	color: var(--white-color);
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-weight: 400;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.agree-btn-del:hover {
+	background-color: var(--baby-purple-color);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.agree-btn-del:focus {
+	outline: none;
+	background-color: var(--tropical-indigo-color);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.agree-btn-del:active {
+	background-color: var(--tropical-indigo-color);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.cancel-btn-del {
+	padding: 0;
+	color: var(--dark-charcoal-color);
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration-line: underline;
+	transition: color 0.3s ease-in-out;
+}
+
+.cancel-btn-del:hover {
+	color: var(--tropical-indigo-color);
+	transition: color 0.3s ease-in-out;
+}
+
+.cancel-btn-del:focus {
+	outline: none;
+	color: var(--tropical-indigo-color);
+	transition: color 0.3s ease-in-out;
+}
+
+.cancel-btn-del:active {
+	color: var(--tropical-indigo-color);
+	transition: color 0.3s ease-in-out;
+}

@@ -1,0 +1,34 @@
+@media (max-width: 900px) {
+	/* table tbody */
+	.client-line__created,
+	.client-line__updated {
+		grid-template-columns: none;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	
+	.client-line__actions {
+		grid-template-columns: none;
+		grid-template-rows: 1fr 1fr;
+	}
+}
+
+@media (max-width: 600px) {
+	/* header */
+	.header {
+		justify-content: center;
+	}
+
+	.header__logo {
+		margin-right: 0;
+	}
+
+	.header__logo svg {
+		width: 24px;
+		height: 24px;
+	}
+
+	.header__search {
+		display: none;
+	}
+}

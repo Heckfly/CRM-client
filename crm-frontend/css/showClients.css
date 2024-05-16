@@ -1,0 +1,157 @@
+.client-line {
+	text-align: left;
+	background-color: var(--white-color);
+	border-bottom: 1px solid rgba(200, 197, 209, 0.5);
+}
+
+td {
+	padding: 0;
+}
+
+.client-line__cell {
+	padding: 20px 10px;
+	width: fit-content;
+}
+
+.client-line__id {
+	padding-left: 20px;
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--dark-gray-color);
+	text-align: left;
+}
+
+.client-line__fullname {
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--dark-charcoal-color);
+	text-align: left;
+	width: 100%;
+}
+
+.client-line__created,
+.client-line__updated {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.client-line__contacts {
+	font-size: 0;
+	text-align: left;
+	display: grid;
+	grid-template-columns: 16px 16px 16px 16px 16px;
+	gap: 7px;
+}
+
+.client-line__actions {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 30px;
+	padding-right: 20px;
+}
+
+.client-line__contacts-hidden {
+	display: none;
+}
+
+.client-line__contacts-span {
+	width: 16px;
+	height: 16px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+	border: 1px solid var(--tropical-indigo-color);
+	border-radius: 50%;
+	background-color: transparent;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.client-line__contacts-span:hover {
+	background-color: var(--baby-purple-color);
+	color: var(--white-color);
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.client-line__contacts-span:focus {
+	background-color: var(--baby-purple-color);
+	color: var(--white-color);
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.client-line__contacts-span:active {
+	background-color: var(--tropical-indigo-color);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.client-line__edit,
+.client-line__delete {
+	position: relative;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--dark-charcoal-color);
+	text-align: left;
+	text-wrap: nowrap;
+	transition: color 0.3s ease-in-out;
+}
+
+.client-line__edit:hover {
+	color: var(--tropical-indigo-color);
+	transition: color 0.3s ease-in-out;
+}
+
+.client-line__edit:focus {
+	outline: none;
+	color: var(--tropical-indigo-color);
+	transition: color 0.3s ease-in-out;
+}
+
+.client-line__edit:active {
+	color: var(--tropical-indigo-color);
+	transition: color 0.3s ease-in-out;
+}
+
+.client-line__delete:hover {
+	color: var(--tomato-color);
+	transition: color 0.3s ease-in-out;
+}
+
+.client-line__delete:focus {
+	outline: none;
+	color: var(--tomato-color);
+	transition: color 0.3s ease-in-out;
+}
+
+.client-line__delete:active {
+	color: var(--tomato-color);
+	transition: color 0.3s ease-in-out;
+}
+
+.edit-spinner {
+	position: absolute;
+	display: none;
+	top: -1px;
+	left: -2px;
+	font-size: 0;
+	animation: spinner 1s linear infinite;
+}
+
+.delete-spinner {
+	position: absolute;
+	display: none;
+	top: -1px;
+	left: -2px;
+	font-size: 0;
+	animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

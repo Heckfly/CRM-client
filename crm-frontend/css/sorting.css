@@ -1,0 +1,25 @@
+.section__list-number {
+	cursor: pointer;
+	font-size: 10px;
+	font-weight: 400;
+	color: var(--dark-gray-color);
+}
+
+.section__list-number_active {
+	font-size: 12px;
+	font-weight: 700;
+	color: var(--tropical-indigo-color);
+}
+
+.section__list-commas {
+	color: var(--dark-gray-color);
+	cursor: default;
+}
+
+.section__title_comment {
+	padding-left: 20px;
+	font-size: 12px;
+	font-weight: 400;
+	color: var(--dark-gray-color);
+	cursor: default;
+}
